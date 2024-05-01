@@ -1,0 +1,335 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Sora", sans-serif;
+  background-color: #0F1525;
+}
+
+header.introduction{
+  padding-inline: 4em;
+  padding-block: 8em;
+  background-image: url(https://i.ibb.co/cLdRbGt/Blur.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron {
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2em;
+  margin-bottom: 7em;
+}
+
+.jumbotron .identity p {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.jumbotron .identity h1{
+  font-size: 4em;
+  background: linear-gradient(to right, #00A3FF, #00FFF0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.jumbotron p span{
+  font-weight: bold;
+}
+
+.jumbotron p span:nth-child(2), .about-me p span{
+   background: linear-gradient(to right, #00A3FF, #00FFF0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  padding: 1em 4em;
+  cursor: pointer;
+  background-color: #0B8DCD;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #fff; /* Warna teks */
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5); /* Bayangan teks */
+  box-shadow: 0px 0px 10px #0B8DCD; /* Bayangan tombol */
+  border: 0px;
+  transition: all 0.3s ease; /* Animasi transisi */
+}
+
+header section {
+  display: flex;
+  padding-block: 2em;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em ;
+
+}
+
+header section i {
+  font-size: 4em;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+/* main */
+/* about me */
+#about-me {
+  display: flex;
+  padding-inline: 4em;
+  column-gap: 2.5em;
+  padding-bottom: 8em;
+}
+
+.img-author {
+  max-width: 300px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  row-gap: 1.5em;
+}
+
+.about-me h1, #recent-cases h1, #recent-experience h1, #education h1{
+  font-size: 4em;
+  background: linear-gradient(to right, #00A3FF, #00FFF0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* recent cases */
+#recent-cases {
+  margin-bottom: 8em;
+}
+#recent-cases header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  row-gap: 1.5em;
+  padding-inline: 4em;
+}
+
+#recent-cases .card {
+  margin-inline: 4em ;
+  margin-top: 2em;
+  height: 16em;
+  display: flex;
+  color: white;
+  background-color: #060C1D;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+
+#recent-cases .card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2em 1.5em;
+  row-gap: 1em;
+  flex: 1;
+}
+
+#recent-cases .card .card-content p:nth-child(1){
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#recent-cases .card .card-content p:nth-child(2){
+  font-weight: 200;
+}
+
+#recent-cases .card .card-img{
+  background-image:url('https://i.ibb.co/KbyP271/Vector.png');
+  background-position: center;
+  background-size: cover;
+  background-color: #ffffff;
+  flex: 1;
+  border-radius: 0 1em 1em 0;
+  -webkit-border-radius: 0 1em 1em 0;
+  -moz-border-radius: 0 1em 1em 0;
+  -ms-border-radius: 0 1em 1em 0;
+  -o-border-radius: 0 1em 1em 0;
+}
+
+.card .card-content button {
+  border: 2px solid transparent; /* Atur border biasa */
+  background-color: transparent;
+  cursor: pointer;
+  border-image: linear-gradient(to right, #00A3FF, #00FFF0);
+  border-image-slice: 1; /* Atur slice border */
+  background: linear-gradient(to right, #00A3FF, #00FFF0); /* Efek warna linear pada teks */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
+/* recent experience */
+
+#recent-experience {
+  padding-inline: 4em;
+  margin-bottom: 7em;
+  color: white;
+}
+#recent-experience header, #education header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  row-gap: 1.5em;
+  margin-bottom: 3em;
+}
+
+#recent-experience section{
+  margin-bottom: 3em;
+}
+#recent-experience section p span {
+  background: linear-gradient(to right, #00A3FF, #00FFF0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+#recent-experience button {
+  display: block;
+  margin-inline: auto;
+}
+
+/* education */
+
+#education {
+  margin-inline: 4em;
+  margin-bottom: 4em;
+}
+
+#education .card {
+  display: flex;
+  padding: 2em;
+  font-size: 0.8em;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1em;
+  background-color: #060C1D;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+
+#education .card .school {
+  flex: 2;
+}
+
+#education .card .school p:nth-child(1) {
+  background: linear-gradient(to right, #00A3FF, #00FFF0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#education .card .description {
+  flex: 4;
+}
+#education .card button {
+  flex: 1;
+}
+
+
+/* footer content */
+
+.footer {
+  background-color: #060C1D;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+/* media */
+
+
+@media (min-width: 320px) and (max-width: 767px){
+
+  .jumbotron .identity h1,
+  .about-me h1, #recent-cases h1, #recent-experience header h1, #education h1{
+    font-size: 2em;
+  }
+  #about-me, .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #recent-cases header {
+    text-align: center;
+  }
+
+  
+
+  #education .card {
+    flex-direction: column;
+    row-gap: 2em;
+    align-items: flex-start;
+  }
+  
+  button {
+    font-size: 1em;
+    padding: 1em 1.5em;
+  }
+
+  #about-me .about-me {
+    text-align: center;
+  }
+
+  #recent-cases .card {
+    flex-direction: column;
+  }
+}
