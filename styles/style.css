@@ -171,7 +171,6 @@ header section i {
 }
 
 #recent-cases .card .card-img{
-  background-image:url('https://i.ibb.co/KbyP271/Vector.png');
   background-position: center;
   background-size: cover;
   background-color: #ffffff;
@@ -181,6 +180,16 @@ header section i {
   -moz-border-radius: 0 1em 1em 0;
   -ms-border-radius: 0 1em 1em 0;
   -o-border-radius: 0 1em 1em 0;
+}
+
+#recent-cases .card-1 .card-img{
+  background-image:url('https://i.ibb.co/sVhWYkx/image-processing20221204-24605-cut2o5.jpg');
+}
+#recent-cases .card-2 .card-img{
+  background-image:url('https://i.ibb.co/VSd4r0d/original-b7c9665f47d898d1a6203f30f0a5b942.png');
+}
+#recent-cases .card-3 .card-img{
+  background-image:url('https://i.ibb.co/qxfDrp9/original-094c03bd0e565be36d5d1a83f7253467.jpg');
 }
 
 .card .card-content button {
@@ -287,6 +296,85 @@ header section i {
 }
 
 
+/* aside */
+aside {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -200px;
+  z-index: 999;
+  transition: right .3s ease;
+  -webkit-transition: right .3s ease;
+  -moz-transition: right .3s ease;
+  -ms-transition: right .3s ease;
+  -o-transition: right .3s ease;
+
+}
+
+aside .logo {
+  text-align: end;
+}
+aside i {
+  cursor: pointer;
+  color: #fff;
+  font-size:2em;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  background: linear-gradient(to right, #00A3FF, #00FFF0);
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+}
+
+.appear {
+  right: 0;
+}
+
+.appear-logo {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+
+.section {
+  text-align: center;
+  width: 200px;
+  color: white;
+  height: 100%;
+  background-color: #0F1525;
+  opacity: .9;
+}
+
+.section .social {
+  height: 100%;
+  display: flex;
+  row-gap: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li{
+  list-style-type: none;
+}
+
+.social li a img{
+  width: 100px;
+}
+
+
+
 
 
 
@@ -311,8 +399,9 @@ header section i {
   #recent-cases header {
     text-align: center;
   }
-
-  
+  #recent-cases .card {
+    height: auto;
+  }
 
   #education .card {
     flex-direction: column;
@@ -331,5 +420,14 @@ header section i {
 
   #recent-cases .card {
     flex-direction: column;
+  }
+
+  #education {
+    margin: 2em;
+  }
+
+  .footer {
+    padding: 1.5em;
+    font-size: .8em;
   }
 }
